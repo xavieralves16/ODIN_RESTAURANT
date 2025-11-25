@@ -2,15 +2,24 @@ export default function loadMenu() {
   const content = document.getElementById("content");
 
   const menuDiv = document.createElement("div");
+  menuDiv.className = "menu";
 
   const title = document.createElement("h1");
-  title.textContent = "Menu";
+  title.textContent = "Our Menu";
 
-  const item = document.createElement("p");
-  item.textContent = "Pizza Margherita — €12";
+  const items = [
+    { name: "Pizza Margherita", price: "€12" },
+    { name: "Pepperoni Special", price: "€14" },
+    { name: "Four Cheese Deluxe", price: "€15" },
+    { name: "Garlic Bread", price: "€5" },
+  ];
 
-  menuDiv.appendChild(title);
-  menuDiv.appendChild(item);
+  items.forEach((item) => {
+    const div = document.createElement("div");
+    div.className = "menu-item";
+    div.innerHTML = `${item.name} — <span>${item.price}</span>`;
+    menuDiv.appendChild(div);
+  });
 
   content.appendChild(menuDiv);
 }
