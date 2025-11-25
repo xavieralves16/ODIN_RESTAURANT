@@ -1,0 +1,110 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background-color: #121212;
+  color: white;
+  min-height: 100vh;
+}
+
+/* HEADER / NAV */
+header {
+  background-color: #1b1b1b;
+  padding: 20px 0;
+  border-bottom: 1px solid #333;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav button {
+  background: none;
+  border: 2px solid #444;
+  padding: 10px 20px;
+  color: white;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  font-size: 16px;
+}
+
+nav button:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+/* CONTENT AREA */
+#content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* HOME PAGE */
+.home h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.home p {
+  font-size: 20px;
+  color: #d0d0d0;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* MENU PAGE */
+.menu h1 {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+.menu-item {
+  background: #1f1f1f;
+  border: 1px solid #333;
+  padding: 20px;
+  margin: 10px 0;
+  border-radius: 8px;
+  font-size: 18px;
+}
+
+.menu-item span {
+  color: #f5c542;
+  font-weight: bold;
+}
+
+/* CONTACT PAGE */
+.contact h1 {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+.contact .info {
+  background: #1f1f1f;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #333;
+  font-size: 18px;
+  max-width: 400px;
+  margin: 20px auto;
+}
+
+.contact a {
+  color: #f5c542;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
